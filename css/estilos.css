@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: grid;
+	grid-template-areas: 
+         "header"
+         "main"
+         "footer";
+    width: 100%;       
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url(Poppins/Poppins-Regular.ttf);
+}
+	
+@font-face {
+font-family: "PoppinsMedium";
+	src: url(Poppins/Poppins-Medium.ttf);
+}
+
+header {
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+/** Index **/
+
+.mainIndex {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.ImgPpal {
+	width: 100%;
+	justify-content: center;
+	overflow-x: hidden;
+	display: flex;
+}
+
+#fondoPrincipal {
+	width: 100%;
+}
+
+.ImgsIndex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 1rem 1rem;
+	width: 100%;
+}
+
+.divImgIndex {
+	background-color: #ffff;
+}
+
+.ImgIndex {
+	width: 22rem;
+	padding: 1rem;
+}
+
+/** fin Index **/
+
+/** Nosotros **/
+
+.mainNosotros {
+	display: grid;
+	grid-template-areas: 
+                         "imgNosotros tituloNosotros"
+                         "imgNosotros textoNosotros";                             
+}
+
+.divImgNosotros {
+	grid-area: imgNosotros;
+	overflow: hidden;
+}
+
+.divImgNosotros img {
+	height: 84rem;
+	padding: 2rem;
+}
+
+.divTituloNosotros {
+	height: 42rem;
+	grid-area: tituloNosotros;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.divTextoNosotros {
+	height: 42rem;
+	grid-area: textoNosotros;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/** Nosotros **/
+
+.fontPoppinsReg {
+	font-family: "Poppins";
+}
+.fontPoppinsMedium {
+	font-family: "PoppinsMedium";
+}
+
+.logoEncabezado {
+	width: 6rem;
+	height: auto;
+	padding-left: 1rem;
+}
+
+.logosRedes {
+	width: 5rem;
+	height: auto;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+li a {
+	text-decoration: none;
+	font-size: 2rem; 
+	padding: 1rem;
+	color: #f08589 ;
+	white-space: nowrap;
+}
+
+footer div p {
+	text-decoration: none;
+	font-size: 1.5rem; 
+	color: black;
+	margin-top: 2rem;
+}
+
+.maxWith {
+	max-width: 100%;
+}
+
+
+.imgGaleria {
+	padding: 0.5rem;
+	width: 40rem;
+}
+
+.fontSizeParrafo {
+	font-size: 1.5rem;
+}
+
+h1 {
+	font-size: 4rem;
+	color: white;
+	padding: 2rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 30rem;
+	color: white;
+}
+
+.input {
+	width: 45rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	border: none;
+	margin-top: 1.5rem;
+}
+
+.divInput{
+	margin-bottom: 6rem;
+}
+
+textarea {
+	height: 30rem;
+	width: 60rem;
+	border-radius: 1rem;
+	border: none;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.botonesContacto {
+	width: 15rem;
+	font-size: 1.5rem;
+}
+
+.bgColorPrincipal {
+	background-color: #fbbf69;
+}
+
+.bgColorSecundario {
+	background-color: #f08589;
+}
+
+footer {
+	grid-area: footer;
+	background-image: url(../assets/img/footer.png);
+	background-size: inherit;
+	background-position: center;
+	height: 28rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 1%;
+}
+
+.divRrssFooter {
+	background-image: url(../assets/img/pincelada.png);
+	background-size: contain;
+	background-repeat:no-repeat;
+}
+
+@media only screen and (max-width: 768px){
+	header {
+	   grid-area: header;
+	   display: flex;
+	   flex-direction: column;
+    }	
+
+    .ImgPpal {
+	width: 200%;
+	justify-content: center;
+	overflow-x: hidden;
+	display: flex;
+    }
+
+    .ImgsIndex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 1rem 1rem;
+	width: 167%;
+    } 
+
+    .divImgIndex {
+     	background-color: #ffff;
+    }
+ 
+    .ImgIndex {
+	    width: 11rem;
+	    padding: 0.5rem;
+    }
+    
+    footer {
+	grid-area: footer;
+	background-image: none;
+	background-color:#f08589 ;
+	height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    footer div p {
+	text-decoration: none;
+	font-size: 1rem; 
+	color: black;
+	margin-top: 1.2rem;
+    }
+    
+    .mainNosotros {
+	display: grid;
+	grid-template-areas: 
+                         "tituloNosotros"
+                         "textoNosotros"                             
+                         "imgNosotros";
+    }
+
+    .divImgNosotros {
+	grid-area: imgNosotros;
+	overflow: hidden;
+	height: 600px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.divImgNosotros img {
+	height: 60rem;
+	padding: 0.5rem;
+}
+
+.divTituloNosotros {
+	height:auto;
+	grid-area: tituloNosotros;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding-top: 3rem;
+}
+
+.divTextoNosotros {
+	height: auto;
+	grid-area: textoNosotros;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+}
+
