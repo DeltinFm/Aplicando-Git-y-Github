@@ -143,6 +143,11 @@ li a {
 	padding: 1rem;
 	color: #f08589 ;
 	white-space: nowrap;
+	transition: all .6s;
+}
+
+li a:hover {
+	font-size: 2.5rem;
 }
 
 footer div p {
@@ -219,6 +224,11 @@ textarea {
 	background-color: #f08589;
 }
 
+.bgColorDegradado {
+	background-image: linear-gradient(#f08589, #f08589 ,#fbbf69);
+}
+
+
 footer {
 	grid-area: footer;
 	background-image: url(../assets/img/footer.png);
@@ -261,14 +271,30 @@ footer {
     } 
 
     .divImgIndex {
-     	background-color: #ffff;
+     	background-color: #ffff; 	
     }
  
     .ImgIndex {
 	    width: 11rem;
 	    padding: 0.5rem;
     }
-    
+
+    p {
+    	animation-name: ;
+    	animation-duration: 2s;
+    	animation-iteration-count: 1;
+    }
+
+    @keyframes aparecer {
+    	0% {
+    		opacity: 0;
+    	}
+
+    	100% {
+    		opacity: 1;
+    	}
+    }
+
     footer {
 	grid-area: footer;
 	background-image: none;
